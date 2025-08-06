@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
+@import "tailwindcss";
+
+/* ===================
+   Global Custom Animations
+   =================== */
+@keyframes spinSlow {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.animate-spinSlow {
+  animation: spinSlow 30s linear infinite;
+}
+
+@keyframes marquee-vertical {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+.animate-marquee-vertical {
+  animation: marquee-vertical 12s linear infinite;
+  position: relative; /* Ensure top works */
+}
+
+@keyframes marquee-vertical-reverse {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+.animate-marquee-vertical-reverse {
+  animation: marquee-vertical-reverse 12s linear infinite;
+  position: relative; /* Ensure top works */
+}
+
+/* ===================
+   Font & Global Setup
+   =================== */
+:root {
+  --font-title: "Poppins", sans-serif;
+  --font-content: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #170f24;
+  font-family: var(--font-content);
+}
