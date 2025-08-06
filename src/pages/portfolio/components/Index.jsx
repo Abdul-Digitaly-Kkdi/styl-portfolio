@@ -8,6 +8,7 @@ import WebDevelopmentPortfolio from '../components/WebDevelopmentPortfolio'
 import KeyDifferentiators from '../components/KeyDifferentiators'
 import About from '../components/About'
 import ContactSection from '../components/ContactInformation'
+import MarqueeAds from '../../aboutus/Marquee'
 
 
 
@@ -21,6 +22,7 @@ const Index = () => {
       <CreativePortfolio />
       <PaidPerformanceMarketing />
       <WebDevelopmentPortfolio />
+      <MarqueeAds />
       <KeyDifferentiators />
       <ContactSection />
     </>

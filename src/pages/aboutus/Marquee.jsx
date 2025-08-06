@@ -22,40 +22,40 @@ import Thyromax from "../../assets/logos/Thyromax.png";
 import Untitled from "../../assets/logos/Untitled.png";
 
 const images = [
-  Crown, cymno, DECADENCE, feasta, finny,
-  johns, JOHNSACADEMY, LMN, mugesh, Offisolv,
-  Sakthi, smart, SRSH, SYC, TC,
-  three, Thyromax, Untitled,
+    Crown, cymno, DECADENCE, feasta, finny,
+    johns, JOHNSACADEMY, LMN, mugesh, Offisolv,
+    Sakthi, smart, SRSH, SYC, TC,
+    three, Thyromax, Untitled,
 ];
 
 const MarqueeAds = () => {
-  return (
-    
-      <>
-          <h1 className='text-center text-3xl md:text-4xl font-semibold text-red-700 py-5 md:hidden '>Our Insurance</h1>
-          <div className="w-full bg-[#170f24] py-4 relative mb-5">
+    return (
 
-              <div className='hidden md:flex absolute top-0 left-0 z-10  items-center font-semibold px-2 text-3xl bg-rose-400  h-28 text-white'>
-                  Our Clients
-              </div>
+        <>
+            <h1 className='text-center text-3xl md:text-4xl font-semibold text-red-600 py-5 md:hidden bg-white md:'>Our Clients</h1>
+            <div className="w-full bg-white/70 py-4 relative">
 
-              <Marquee pauseOnHover={true} speed={40}>
-                  {images.map((img, index) => (
-                      <div
-                          key={index}
-                          className="mx-7 flex items-center justify-center overflow-hidden"
-                      >
-                          <img
-                              src={img}
-                              alt={`insurance-${index + 1}`}
-                              className="h-20 w-auto object-contain  hover:scale-105 transition-transform duration-300"
-                          />
-                      </div>
-                  ))}
-              </Marquee>
-          </div>
-      </>
-  );
+                <div className='hidden md:flex absolute top-0 left-0 z-10  items-center font-semibold px-2 text-3xl bg-black  h-28 text-white'>
+                    Our Clients
+                </div>
+
+                <Marquee pauseOnHover={true} speed={40}>
+                    {images.map((img, index) => (
+                        <div
+                            key={index}
+                            className="mx-7 flex items-center justify-center overflow-hidden"
+                        >
+                            <img
+                                src={img}
+                                alt={`insurance-${index + 1}`}
+                                className="h-20 w-auto object-contain  hover:scale-105 transition-transform duration-300"
+                            />
+                        </div>
+                    ))}
+                </Marquee>
+            </div>
+        </>
+    );
 };
 
 export default MarqueeAds;

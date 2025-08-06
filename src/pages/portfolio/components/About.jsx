@@ -9,11 +9,11 @@ const About = () => {
 
   return (
     <section className="bg-white py-16 px-4 md:px-20">
-      <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <div className="max-w-4xl mx-auto text-center" >
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 tracking-tight">
           About <span className="text-rose-600">STYL</span>
         </h2>
-        <p className="text-gray-600 text-lg md:text-xl leading-relaxed text-justify md:text-center">
+        <p className="text-gray-600 text-lg md:text-xl leading-relaxed text-justify md:text-center" data-aos="fade-up">
           STYL is a premier digital marketing agency specializing in strategic social media
           management, performance marketing, and creative content production. We transform brands
           through data-driven strategies, compelling storytelling, and measurable results that
